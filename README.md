@@ -22,3 +22,8 @@ Este repositorio nos sirve para aprehender el flujo de trabajo de git y github
 * git switch -C ejemplo2
 * git switch ejemplo2
 * git merge ejemplo2
+* git checkout ejemplo
+* git checkout -b ejemplo
+* git switch -c ejemplo2
+* git switch ejemplo2
+* git merge ejemplo2
