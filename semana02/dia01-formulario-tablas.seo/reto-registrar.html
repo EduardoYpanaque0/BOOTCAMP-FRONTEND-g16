@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto: Formulario de registro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <!--TODO: Crear un formulario para crear una cuenta de usuario con los campos nombres, apellidos, email, telefono, password, confirmar password (caja de texto), si gustan pueden agregar mas campos. Y un boton llamado registrarse -->
+    <main class="container-fluid">
+        <form>
+            <h2>Registrar una cuenta de usuario</h2>
+
+            <label>
+                Nombres
+                <input type="text" placeholder="insertar nombre de Usuario" name="nombre" required>
+            </label>
+            
+            <label>
+                Apellidos
+                <input type="text" placeholder="insertar apellidos de Usuario" name="apellido" required>
+            </label>
+            
+            <label>
+                Email
+                <input type="email" placeholder="insertar email de Usuario" name="email" required>
+            </label>
+            
+            <label>
+                Telefono
+                <input type="tel" placeholder="insertar telefono de Usuario +51 123456789" pattern="\+[0-9]{2} [0-9]{9}" name="telefono" required>
+            </label>
+            
+            <label>
+                Password
+                <input type="password" placeholder="insertar password de Usuario" name="contraseña" required>
+            </label>
+            
+            <label>
+                Confirmar PAssword
+                <input type="password" placeholder="insertar nuevamente el password de Usuario" name="contraseña2" required>
+            </label>
+
+            <input type="submit" value="REGISTRARSE">
+        </form>
+    </main>
+
+</body>
+</html>
