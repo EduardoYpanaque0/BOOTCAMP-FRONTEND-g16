@@ -10,26 +10,70 @@
     <!--TODO: Crear un formulario para crear una cuenta de usuario con los campos nombres, apellidos, email, telefono, password, confirmar password (caja de texto), si gustan pueden agregar mas campos. Y un boton llamado registrarse -->
     <main class="container-fluid">
         <form>
-            <h2>Registrar una cuenta de usuario</h2>
+            <img src="./image.png" alt="logoCuenta">
+            <hgroup>
+                <h2>Crear una cuentas</h2>
+                <h3>Ingresa la siguiente informacion para registrarte</h3>
+            </hgroup>
+
+            <div class="grid">
+                <label for="Nombres">
+                    Nombres
+                    <input type="text" id="Nombres" name="Nombres" placeholder="Nombres" required>
+                </label>
+                <label for="Apellidos">
+                    Apellidos
+                    <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos" required>
+                </label>
+            </div>
 
             <label>
-                Nombres
-                <input type="text" placeholder="insertar nombre de Usuario" name="nombre" required>
+                Edad
+                <input type="number" min="1" max="100" placeholder="Ej: 19" name="edad" required>
+            </label>
+
+            <label>
+                Fecha de nacimiento
+                <input type="date" name="fecha" required>
             </label>
             
             <label>
-                Apellidos
-                <input type="text" placeholder="insertar apellidos de Usuario" name="apellido" required>
+                Genero
+                <Select name="generos">
+                    <option value="">Selecciona tu genero</option>
+                    <option value="ma">Masculino</option>
+                    <option value="fe">Femenino</option>
+                    <option value="pr">Prefiero no decirlo</option>
+                    <option value="ot">Otro</option>
+                </Select>
             </label>
             
             <label>
-                Email
-                <input type="email" placeholder="insertar email de Usuario" name="email" required>
+                <input type="email" placeholder="Email: Ej. user@gmail.com" name="email" required>
+            </label>
+
+            <label>
+                Dirección
+                <input type="text" name="direccion1" placeholder="direccion" required>
+            </label>
+
+            <label>
+                <input type="text" name="direccion2" placeholder="direccion linea 2" required>
             </label>
             
             <label>
                 Telefono
-                <input type="tel" placeholder="insertar telefono de Usuario +51 123456789" pattern="\+[0-9]{2} [0-9]{9}" name="telefono" required>
+                <input type="tel" placeholder="Número de telefono" pattern="\+[0-9]{2} [0-9]{9}" name="telefono" required>
+            </label>
+
+            <label>
+                Código Postal
+                <input type="text" name="codigopostal" placeholder="Ej: 14001" required>
+            </label>
+
+            <label>
+                Ciudad
+                <input type="text" name="ciudad" placeholder="Ej: Chiclayo" required>
             </label>
             
             <label>
@@ -42,7 +86,20 @@
                 <input type="password" placeholder="insertar nuevamente el password de Usuario" name="contraseña2" required>
             </label>
 
+            <label for="file">Subir Firma
+                <input type="file" id="file" name="file">
+            </label>
+
+            <fieldset>
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms">Acepto los términos, condiciones y politicas
+                </label>
+            </fieldset>
+
             <input type="submit" value="REGISTRARSE">
+            <p>
+                Ya tienes una cuenta? <a href="https://youtube.com"><u>Accede desde aqui</u></a>
+            </p>
         </form>
     </main>
 
